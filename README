@@ -1,0 +1,96 @@
+Adaptive Difficulty ML Game
+A Machine Learning Powered Dynamic Difficulty Adjustment (DDA) System
+
+This project demonstrates a real-time adaptive difficulty system using machine learning.
+The player clicks a moving target, while the game continuously measures performance and uses a trained Random Forest Regressor to predict expected reaction time.
+
+Based on this prediction, the game automatically adjusts difficulty by modifying:
+
+Target size
+
+Movement speed
+
+Velocity randomness
+
+Scoring difficulty
+
+This creates a personalized gameplay experience similar to systems used in modern AAA games.
+
+🧠 Features
+✔ Machine Learning - Driven Adaptation
+
+Random Forest model predicts next reaction time
+
+Difficulty adjusts based on performance ratio
+
+Includes 18 engineered gameplay features
+
+✔ Real-Time Player Modeling
+
+Tracks:
+
+accuracy
+
+reaction time
+
+streaks
+
+combo multiplier
+
+hit/miss ratio
+
+difficulty * speed interaction
+
+time played
+
+target parameters
+
+✔ Visual Feedback
+
+Hit animations
+
+Miss markers
+
+Combo effects
+
+Live difficulty indicators
+
+✔ ML Visualization Tools
+
+Includes scripts to generate professional visualizations:
+
+Feature importance
+
+Prediction vs actual
+
+Reaction time distribution
+
+
+
+🛠 Installation
+git clone https://github.com/YOUR_USERNAME/adaptive-ml-difficulty-game.git
+cd adaptive-ml-difficulty-game
+pip install -r requirements.txt
+
+🚀 Running the Game
+1. Train the ML model
+python ml/train_dda_model.py
+
+2. Run the game
+python game/adaptive_click_game.py
+
+📊 Visualizing the Model
+python ml/visualize_ml.py
+
+
+Generates:
+
+feature_importance.png
+
+prediction_vs_actual.png
+
+predicted_rt_distribution.png
+
+📜 License
+
+MIT License

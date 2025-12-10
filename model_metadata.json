@@ -1,0 +1,28 @@
+{
+  "model_type": "RandomForestRegressor",
+  "n_features": 18,
+  "features": [
+    "hit_accuracy",
+    "avg_reaction_time",
+    "current_streak",
+    "max_streak",
+    "score",
+    "target_size",
+    "target_speed",
+    "difficulty_level",
+    "recent_hits",
+    "recent_misses",
+    "combo_multiplier",
+    "time_played",
+    "hit_miss_ratio",
+    "score_per_click",
+    "streak_ratio",
+    "difficulty_size_interaction",
+    "difficulty_speed_interaction",
+    "accuracy_reaction_product"
+  ],
+  "train_score": 0.9969390017692804,
+  "test_score": 0.9915112437602892,
+  "n_samples_train": 4000,
+  "n_samples_test": 1000
+}
